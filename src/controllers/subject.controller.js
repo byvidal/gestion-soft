@@ -1,5 +1,4 @@
-// src/controllers/subject.controller.js
-import Subject from '../models/subject.model.js'; //
+import Subject from '../models/subject.model.js';
 
 export const createSubject = async (req, res) => {
     try {
@@ -8,7 +7,7 @@ export const createSubject = async (req, res) => {
         const newSubject = new Subject({
             subjectname,
             key,
-            user: req.user.id // Usamos el ID que viene del token (validateToken)
+            user: req.user.id
         });
 
         const savedSubject = await newSubject.save();
