@@ -1,0 +1,9 @@
+@tailiwind base;
+@tailiwind components;
+@tailiwind utilities;
+
+body {
+  background: #202020;
+  color: white;
+}
+
